@@ -7,36 +7,7 @@ header {
 	padding: 20px 0;
 }
 
-.caixa {
-	position: relative;
-	width: auto;
-	margin: 0 auto;
-}
 
-
-nav {
-	position: absolute;
-	top: 110px;
-	right: 0;
-}
-
-nav li {
-	display: inline;
-	margin: 0 0 0 15px;
-}
-
-nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
-}
 
 .services {
 	width: 940px;
@@ -65,11 +36,11 @@ nav a:hover {
 }
 
 .services li:hover h2 {
-	font-size: 34px;
+	font-size: 25px;
 }
 
 .services h2 {
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: bold;
 }
 
@@ -85,14 +56,15 @@ nav a:hover {
 
 footer {
 	text-align: center;
-	background: #BBBBBB; url("/images/bg.jpg");
-	padding: 40px 0;
+	background: url("../../images/bg.jpg");
+	padding: 10px 0;
+	margin: 0 auto;
 }
 
 .copyright {
 	color: #FFFFFF;
 	font-size: 13px;
-	margin: 20px 0 0;
+	margin: 7px;
 }
 
 main {
@@ -159,14 +131,17 @@ td, th {
 
 /* css da página inicial */
 
-.imagem-logo {
-	width: 177px;
-	height: 200px;
+.imagem-carrossel {
+	object-position: 0 60%;
+	height: 400px;
+
 }
 
-.banner {
-	width: 100%;
-	height: 300px;
+.imagem-logo {
+	width: 150px;
+	height: 120px;
+	margin: 0 auto;
+
 }
 
 .titulo-principal {
@@ -174,6 +149,7 @@ td, th {
 	font-size: 2em;
 	margin: 0 0 1em;
 	clear: left;
+	color: rgb(0,0,0.3);
 }
 
 .principal {
@@ -193,13 +169,16 @@ td, th {
 
 .principal em {
 	font-style: italic;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
 .utensilios {
-	width: 150px;
-	height: 150px;
+	width: 220px;
+	height: 180px;
 	float: left;
-	margin: 0 20px 20px 0;
+	margin: 0 0 1em;
+    clear: left;
 }
 
 .mapa {
@@ -243,17 +222,18 @@ td, th {
 
 .itens:before {
 	content: "🟊";
-}
-
-.imagem-beneficios {
-	width: 60%;
-	opacity: 1;
-	transition: 400ms;
-	box-shadow: 10px 10px 10px 0 #000000;
+	
 }
 
 .imagem-beneficios:hover {
-	opacity: 0.3;
+	opacity: 0,3;
+}
+
+.imagem-beneficios { 
+	width: 60%;
+	opacity: 1;
+	transition: 400ms; 
+	box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .video {
@@ -261,12 +241,8 @@ td, th {
 	margin: 2em auto;
 }
 
-.imagem-beneficios {
-width: 177;
-height: 250;	
-}
 @media screen and (max-width: 480px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+	.principal, .conteudo-beneficios, .mapa-conteudo, .video {
 		width: auto;
 	}
 
@@ -281,5 +257,3 @@ height: 250;
 	.lista-beneficios, .imagem-beneficios {
 		width: 100%;
 	}
-}
-
